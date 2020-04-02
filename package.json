@@ -1,0 +1,13 @@
+{
+    "name": "aveeno",
+    "version": "0.2.0",
+    "scripts": {
+        "server": "cd ./aveeno_server && nodemon server.js",
+        "client": "cd ./aveeno_client && yarn start",
+        "start": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "concurrently": "^4.1.2"
+    }
+}
